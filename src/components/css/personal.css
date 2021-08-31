@@ -1,14 +1,14 @@
 .Personal{
     height: 92vh;
     width: 100vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
 }
 
 .Personal_Details{
     height: 100%;
-    width: 50%;
-    border: 1px solid black;
+    width: 45%;
+    /* border: 1px solid black; */
     padding-left: 2rem;
 }
 

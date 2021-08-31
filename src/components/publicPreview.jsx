@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { firestore } from "../firebase";
+import "./css/public.css";
 
 let PublicPreview = () => {
   let [previewData, setPreviewData] = useState(null);
@@ -28,7 +29,78 @@ let PublicPreview = () => {
       ) : loading == "Processing" ? (
         <p>It is Processing</p>
       ) : loading == "Loaded" && previewData.isPublic ? (
-        <p>{previewData.specialization}</p>
+        <>
+          <div className="container">
+            <div className="public_container">
+              <h2>
+                <u>Resume</u>
+              </h2>
+              <br></br>
+              <div className="personal-Details">
+                <h4>
+                  <li className="personal-li">
+                    <u>Personal Details</u>
+                  </li>
+                </h4>
+                <p>
+                  <b>First Name : -</b> {previewData.fname}
+                </p>
+                <p>
+                  <b>Last Name : - </b>
+                  {previewData.lname}
+                </p>
+                <p>
+                  <b>Address : - </b>
+                  {previewData.address}
+                </p>
+                <p>
+                  <b>City : - </b>
+                  {previewData.city}
+                </p>
+                <p>
+                  <b>State : - </b>
+                  {previewData.state}
+                </p>
+                <p>
+                  <b>Phone No : - </b>
+                  {previewData.phone}
+                </p>
+              </div>
+              <br></br>
+              <div className="qualification">
+                <h4>
+                  <li className="personal-li">
+                    <u>Qualification</u>
+                  </li>
+                </h4>
+                <p>
+                  <b>Degree : - </b>
+                  {previewData.degree}
+                </p>
+                <p>
+                  <b>Specialization : - </b>
+                  {previewData.specialization}
+                </p>
+                <p>
+                  <b>College : - </b>
+                  {previewData.college}
+                </p>
+                <p>
+                  <b>Year : - </b>
+                  {previewData.passOutYear}
+                </p>
+                <p>
+                  <b>Email : - </b>
+                  {previewData.email}
+                </p>
+                <p>
+                  <b>CGPA : - </b>
+                  {previewData.cgpa}
+                </p>
+              </div>
+            </div>
+          </div>
+        </>
       ) : (
         "Data is not made public"
       )}

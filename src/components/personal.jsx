@@ -13,7 +13,7 @@ let Personal = () => {
   return (
     <div className="Personal">
       <div className="Personal_Details">
-        <h2>Personal Details</h2>
+        <h2><u>Personal Details</u></h2>
         <br></br>
         <br></br>
         <form class="row g-3">

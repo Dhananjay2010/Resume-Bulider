@@ -8,7 +8,7 @@ let Qualification = () => {
   let dispatch = useDispatch();
   let { degree, specialization, college, passOutYear, email, cgpa } =
     useSelector((state) => state.details);
-  let {uid} = useSelector((state) => state.user);
+  let { uid } = useSelector((state) => state.user);
   let details = useSelector((state) => state.details);
   let tid = useSelector((state) => state.tid);
   let { id } = useSelector((state) => state.saveId);
@@ -16,7 +16,7 @@ let Qualification = () => {
     <>
       <div className="Personal">
         <div className="Personal_Details">
-          <h2>Qualification Details</h2>
+          <h2><u>Qualification Details</u></h2>
           <br></br>
           <br></br>
           <form class="row g-3">
@@ -163,8 +163,7 @@ let Qualification = () => {
         type="button"
         class="btn btn-primary"
         onClick={() => {
-          console.log(id);
-          alert(`http://localhost:3000/publicPreview/${id}`);
+          alert(`https://resume-builder-9294b.web.app/publicPreview/${id}`);
         }}
       >
         Generate Link Of Resume

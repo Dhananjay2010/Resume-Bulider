@@ -1,0 +1,3 @@
+Jaise he sign up ya login hoga, kyunki auth subscribe ho rakha hai to use user mil jaega apne aap. Ab us user ko save kar lena hai bas use redux.
+
+Aur Pura App component he load ho raha hai to auth subscribe hoga pehle se.

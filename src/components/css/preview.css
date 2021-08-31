@@ -1,0 +1,31 @@
+.preview_container p{
+    padding-top: 5px;
+    font-size: 18px;
+    margin-left: 2rem;
+    
+}
+
+.preview_container{
+    
+}
+.container_preview{
+    height: 100%;
+    width: 55%;
+    display: flex;
+    align-items: center;
+
+}
+.container_preview h2{
+    text-align: center;
+}
+
+.resume_container{
+    height: 95%;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+.resume_container h2{
+    padding-right: 4rem;
+}
